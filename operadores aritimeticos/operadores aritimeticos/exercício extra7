@@ -1,0 +1,27 @@
+algoritmo "salario acressimo"
+// Autor :Guilherme
+// Data : 30/03/2023
+// Professora: cintia pinho
+var
+//entrada
+hora, minuto, valorhora, convert, result_convert, result: real
+
+inicio
+//processamento
+escreval ("Digite Hora")
+leia (hora)
+escreval ("Digite minutos")
+leia (minuto)
+escreval ("Digite seu salário por hora")
+leia (valorhora)
+
+//processamento
+convert <- hora + (minuto/60)
+result_convert <- (convert * valorhora)
+result <- result_convert + 70/100* result_convert
+
+//saída
+
+escreval ("Seu salário com acréssimo de 70% será de: ",result)
+
+fimalgoritmo
